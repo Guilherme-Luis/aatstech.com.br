@@ -3,5 +3,5 @@
      $bd_usuario  = 'root';
      $bd_senha    = 'Borges#2641';
      $bd_banco    = 'bancoAatstech';
-     // teste de git hub
+     
 ?>
