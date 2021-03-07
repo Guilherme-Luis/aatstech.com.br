@@ -21,7 +21,7 @@
       <a class="py-2 d-none d-md-inline-block" href="#produto">Produto e Soluções</a>
       <a class="py-2 d-none d-md-inline-block" href="#precos">Preços</a>
       <a class="py-2 d-none d-md-inline-block" href="#criadores">Criadores</a>
-      <a class="py-2 d-none d-md-inline-block" href="login.php">
+      <a class="py-2 d-none d-md-inline-block" href="painel/login.php">
       <img class="bd-placeholder-img rounded-circle" width="24" height="24"  src="images/login.svg" alt="">
       </a>
       <a class="py-2 d-none d-md-inline-block" ></a>
@@ -235,7 +235,7 @@
           <li><a class="link-secondary" href="#produto">Produto e Soluções</a></li>
           <li><a class="link-secondary" href="#precos">Preços</a></li>
           <li><a class="link-secondary" href="#criadores">Criadores</a></li>
-          <li><a class="link-secondary" href="login.php">Acesso Restrito</a></li>
+          <li><a class="link-secondary" href="painel/login.php">Acesso Restrito</a></li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -248,7 +248,7 @@
         </ul>
       </div>
       <div id="duvida" class="col-md-3">
-        <form class="duvida" action="salvarFormulario.php">
+        <form class="duvida" action="../painel/salvarFormulario.php">
           <h5 >Fale Conosco</h5>
           <label for="inputDoubt" class="visually-hidden">Duvida</label>
           <input type="textarea" id="inputDoubt" name="txtDuvida" class="form-control duvida msg" placeholder="Dúvidas" required="">

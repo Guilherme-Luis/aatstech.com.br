@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="sortcut icon" href="images/aatstech.ico"/>
+  <link rel="sortcut icon" href="../images/aatstech.ico"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="script_java.js"></script>
+  <link rel="stylesheet" href="../style.css">
+  <script type="text/javascript" src="../script_java.js"></script>
   <title>Formas de Pagamento</title>
 </head>
 <body>
@@ -17,12 +17,12 @@
       <a class="py-2" aria-label="Product">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Aatstech Corporation</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
       </a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#">Home</a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#produto">Produto e Soluções</a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#precos">Preços</a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#criadores">Criadores</a>
-      <a class="py-2 d-none d-md-inline-block" href="login.php">
-      <img class="bd-placeholder-img rounded-circle" width="24" height="24"  src="images/login.svg" alt="">
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#">Home</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#produto">Produto e Soluções</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#precos">Preços</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#criadores">Criadores</a>
+      <a class="py-2 d-none d-md-inline-block" href="../painel/login.php">
+      <img class="bd-placeholder-img rounded-circle" width="24" height="24"  src="../images/login.svg" alt="">
       </a>
       <a class="py-2 d-none d-md-inline-block" ></a>
     </nav>
@@ -52,7 +52,7 @@
               <ul class="list-unstyled mt-3 mb-4">
                 <li>Em até 3x Sem Juros</li>
               </ul>
-              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="credito()">Prosseguir</button>
+              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="credito()">Indisponível</button>
             </div>
           </div>
           </div>
@@ -66,7 +66,7 @@
               <ul class="list-unstyled mt-3 mb-4">
                 <li>À vista</li>
               </ul>
-              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="debito()">Prosseguir</button>
+              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="debito()">Indisponível</button>
             </div>
           </div>
           </div>
@@ -80,7 +80,7 @@
               <ul class="list-unstyled mt-3 mb-4">
                 <li>5% de Desconto</li>
               </ul>
-              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="boleto()">Prosseguir</button>
+              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="boleto()">Indisponível</button>
             </div>
           </div>
           </div>
@@ -98,11 +98,11 @@
       <div class="col-md-3">
         <h5>Conteúdo</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="index.php#">Home</a></li>
-          <li><a class="link-secondary" href="index.php#produto">Produto e Soluções</a></li>
-          <li><a class="link-secondary" href="index.php#precos">Preços</a></li>
-          <li><a class="link-secondary" href="index.php#criadores">Criadores</a></li>
-          <li><a class="link-secondary" href="login.php">Acesso Restrito</a></li>
+          <li><a class="link-secondary" href="../index.php#">Home</a></li>
+          <li><a class="link-secondary" href="../index.php#produto">Produto e Soluções</a></li>
+          <li><a class="link-secondary" href="../index.php#precos">Preços</a></li>
+          <li><a class="link-secondary" href="../index.php#criadores">Criadores</a></li>
+          <li><a class="link-secondary" href="../painel/login.php">Acesso Restrito</a></li>
         </ul>
       </div>
       <div class="col-md-3">
@@ -115,7 +115,7 @@
         </ul>
       </div>
       <div id="duvida" class="col-md-3">
-        <form class="duvida" action="salvarFormulario.php">
+        <form class="duvida" action="../painel/salvarFormulario.php">
           <h5 >Fale Conosco</h5>
           <label for="inputDoubt" class="visually-hidden">Duvida</label>
           <input type="textarea" id="inputDoubt" name="txtDuvida" class="form-control duvida msg textarea" placeholder="Dúvidas" required="">

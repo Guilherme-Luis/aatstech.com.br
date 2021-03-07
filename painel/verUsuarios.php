@@ -9,10 +9,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="sortcut icon" href="images/aatstech.ico"/>
+  <link rel="sortcut icon" href="../images/aatstech.ico"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="script_java.js"></script>
+  <link rel="stylesheet" href="../style.css">
+  <script type="text/javascript" src="../script_java.js"></script>
   <title>Usuário</title>
 </head>
 <body>
@@ -21,13 +21,13 @@
     font-weight: bold;">
       <a class="py-2 d-none d-md-inline-block" ></a>
       <a class="py-2" aria-label="Product" href="home.php">Painel do Site</a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php">Aatstech Corporation ©</a>
-      <a class="py-2 d-none d-md-inline-block" href="">Vendas Efetudas</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php">Aatstech Corporation ©</a>
+      <a class="py-2 d-none d-md-inline-block" onclick="vendasEfetudas()" href="">Vendas Efetudas</a>
       <a class="py-2 d-none d-md-inline-block" href="verDuvidas.php">Dúvidas</a>
-      <a class="py-2 d-none d-md-inline-block" href="">Produtos</a> 
+      <a class="py-2 d-none d-md-inline-block" onclick="produtos()" href="">Produtos</a> 
       <a class="py-2 d-none d-md-inline-block" href="verUsuarios.php">Usuários</a>
       <a class="py-2 d-none d-md-inline-block" href="sair.php">
-      <img class="bd-placeholder-img rounded-circle" width="24" height="24"  src="images/sair.svg" alt="">
+      <img class="bd-placeholder-img rounded-circle" width="24" height="24"  src="../images/sair.svg" alt="">
       </a>
       <a class="py-2 d-none d-md-inline-block" ></a>
     </nav>
@@ -98,11 +98,11 @@
       <div class="col-md-3">
         <h5>Conteúdo</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="index.php#">Home</a></li>
-          <li><a class="link-secondary" href="index.php#produto">Produto e Soluções</a></li>
-          <li><a class="link-secondary" href="index.php#precos">Preços</a></li>
-          <li><a class="link-secondary" href="index.php#criadores">Criadores</a></li>
-          <li><a class="link-secondary" href="login.php">Acesso Restrito</a></li>
+          <li><a class="link-secondary" href="../index.php#">Home</a></li>
+          <li><a class="link-secondary" href="../index.php#produto">Produto e Soluções</a></li>
+          <li><a class="link-secondary" href="../index.php#precos">Preços</a></li>
+          <li><a class="link-secondary" href="../index.php#criadores">Criadores</a></li>
+          <li><a class="link-secondary" href="../login.php">Acesso Restrito</a></li>
         </ul>
       </div>
       <div class="col-md-3">

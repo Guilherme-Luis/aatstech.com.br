@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="sortcut icon" href="images/aatstech.ico"/>
+  <link rel="sortcut icon" href="../images/aatstech.ico"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="script_java.js"></script>
-  <title>Formas de Pagamento</title>
+  <link rel="stylesheet" href="../style.css">
+  <script type="text/javascript" src="../script_java.js"></script>
+  <title>Login</title>
 </head>
 <body>
     <header class="site-header sticky-top py-1 ">
@@ -17,72 +17,56 @@
       <a class="py-2" aria-label="Product">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Aatstech Corporation</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
       </a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#">Home</a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#produto">Produto e Soluções</a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#precos">Preços</a>
-      <a class="py-2 d-none d-md-inline-block" href="index.php#criadores">Criadores</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#">Home</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#produto">Produto e Soluções</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#precos">Preços</a>
+      <a class="py-2 d-none d-md-inline-block" href="../index.php#criadores">Criadores</a>
       <a class="py-2 d-none d-md-inline-block" href="login.php">
-      <img class="bd-placeholder-img rounded-circle" width="24" height="24"  src="images/login.svg" alt="">
+      <img class="bd-placeholder-img rounded-circle" width="24" height="24"  src="../images/login.svg" alt="">
       </a>
       <a class="py-2 d-none d-md-inline-block" ></a>
     </nav>
     </header>
   <main>
-    <div id="produto" class="about-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h2 class="display-4">Formas de Pagamento</h2>
+    <div id="login" class="about-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      <h2 class="display-4">Aatstech Corporation</h2>
     
       <p class="Sobre">
         <font size = "4" face="Arial">
-            Compra do Water Leak Detector Pro
+        © 2021 <br/> 
         </font> 
         </p>
     </div>
-
-    <hr>
     <!--Precos-->
-      <div id="precos" class="container">
+      <div id="autenticao" class="container">
         <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
+          <div class="col-lg-3"></div>
+          <div class="col-lg-6">
             <div class="card mb-4 shadow-sm">
             <div class="card-header">
-              <h4 class="my-0 fw-normal">Cartão de Crédito</h4>
+              <h4 class="my-0 fw-normal">Acesso ao Sistema</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">R$250<small class="text-muted"></small></h1>
+             <form action="verifica_login.php">
+              <h6 class="card-title pricing-card-title"><small class="text-muted"></small></h6>
               <ul class="list-unstyled mt-3 mb-4">
-                <li>Em até 3x Sem Juros</li>
+                <?php
+                    if(isset($_GET['invalido'])){
+                    echo "<h6>Usuário ou Senha inválidos!<h6>";
+                    } else if(isset($_GET['sair'])){
+                      echo "<h6>Logout do Usuário!<h6>";
+                      }
+                ?>
+              <label for="inputUser" class="visually-hidden">Usuário</label>
+              <input type="text" id="inputUser" name="txtUsuario" class="form-control w-50" placeholder="Usuário" required="" >
+              <label for="inputTel" class="visually-hidden">Senha</label>
+              <input type="password" id="inputSenha" name="txtSenha" class="form-control w-50" placeholder="Senha" required="" >
               </ul>
-              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="credito()">Prosseguir</button>
+              <button  type="submit" class="w-50 btn btn-lg btn-outline-primary">Acessar</button>
+              </form>
             </div>
           </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 fw-normal">Cartão de Débito</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">R$250<small class="text-muted"></small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>À vista</li>
-              </ul>
-              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="debito()">Prosseguir</button>
-            </div>
-          </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-              <h4 class="my-0 fw-normal">Boleto</h4>
-            </div>
-            <div class="card-body">
-              <h1 class="card-title pricing-card-title">R$250<small class="text-muted"></small></h1>
-              <ul class="list-unstyled mt-3 mb-4">
-                <li>5% de Desconto</li>
-              </ul>
-              <button  type="button" class="w-100 btn btn-lg btn-outline-primary" onclick="boleto()">Prosseguir</button>
-            </div>
-          </div>
+          <div class="col-lg-3"></div>
           </div>
         </div>
       </div>
@@ -93,15 +77,15 @@
     <div class="row">
       <div class="col-12 col-md-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Produto</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-        <small class="d-block mb-3 text-muted"><b>Aatstech</br>Corporation </br> © 2021</b></small>
+        <small class="d-block mb-3 text-muted"><b>Aatstech</br>Corporation</br> © 2021</b></small>
       </div>
       <div class="col-md-3">
         <h5>Conteúdo</h5>
         <ul class="list-unstyled text-small">
-          <li><a class="link-secondary" href="index.php#">Home</a></li>
-          <li><a class="link-secondary" href="index.php#produto">Produto e Soluções</a></li>
-          <li><a class="link-secondary" href="index.php#precos">Preços</a></li>
-          <li><a class="link-secondary" href="index.php#criadores">Criadores</a></li>
+          <li><a class="link-secondary" href="../index.php#">Home</a></li>
+          <li><a class="link-secondary" href="../index.php#produto">Produto e Soluções</a></li>
+          <li><a class="link-secondary" href="../index.php#precos">Preços</a></li>
+          <li><a class="link-secondary" href="../index.php#criadores">Criadores</a></li>
           <li><a class="link-secondary" href="login.php">Acesso Restrito</a></li>
         </ul>
       </div>
@@ -118,7 +102,7 @@
         <form class="duvida" action="salvarFormulario.php">
           <h5 >Fale Conosco</h5>
           <label for="inputDoubt" class="visually-hidden">Duvida</label>
-          <input type="textarea" id="inputDoubt" name="txtDuvida" class="form-control duvida msg textarea" placeholder="Dúvidas" required="">
+          <input type="textarea" id="inputDoubt" name="txtDuvida" class="form-control duvida msg" placeholder="Dúvidas" required="">
           <label for="inputEmail" class="visually-hidden">Email</label>
           <input type="email" id="inputEmail" name="txtEmail" class="form-control" placeholder="Email" required="" >
           <label for="inputTel" class="visually-hidden">Telefone</label>
@@ -130,3 +114,5 @@
   </footer>
 </body>
 </html>
+
+

@@ -1,21 +1,21 @@
 
 function Padrao(){
-    window.location.assign("padrao.php");
+    window.location.assign("compras/padrao.php");
 }
 function Pro(){
-    window.location.assign("pro.php");
+    window.location.assign("compras/pro.php");
 }
 function Ultra(){
-    window.location.assign("ultra.php");
+    window.location.assign("compras/ultra.php");
 }
 function credito(){
-    window.location.assign("");
+    alert("Desculpa o transtorno, estamos melhorando a sua expêriencia!");
 }
 function debito(){
-    window.location.assign("");
+    alert("Desculpa o transtorno, estamos melhorando a sua expêriencia!");
 }
 function boleto(){
-    window.location.assign("");
+    alert("Desculpa o transtorno, estamos melhorando a sua expêriencia!");
 }
 function cadastroUsuario(){
     window.location.assign("cadastroUsuario.php");
@@ -25,6 +25,12 @@ function verUsuarios(){
 }
 function excliurUsuario(){
     window.location.assign("");
+}
+function vendasEfetudas(){
+    alert("Desculpa o transtorno, estamos melhorando a sua expêriencia!");
+}
+function produtos(){
+    alert("Desculpa o transtorno, estamos melhorando a sua expêriencia!");
 }
 
 //<script src="C:\Users\Guilherme\Desktop\Técnico T.I\Projeto Integrador\Projeto Senac\script_java.js"></script>
