@@ -1,0 +1,116 @@
+body{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+
+}ul{
+    padding: 0px !important;
+
+}
+
+.menu-principal{
+    width: 100%;
+    background-color: black;
+    height: 70px;
+}
+main{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+
+}.logo{
+    float: left;
+    padding: 10px;
+    width: 75%;
+
+}.redes-sociais ul li{
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin-left: 1px;
+
+}.redes-sociais{
+    width: 21%;
+    float: left;
+
+}.header-2{
+    margin: 0 auto;
+    background-color: white;
+    width: 980px;
+    padding: 10px;
+
+}.menu-ajuste{
+    border-bottom: 3px solid #BEBEBE;
+    height: 80px;
+
+}.menu ul li{
+    display: inline-block;
+    color:#838B83;
+    margin-left: 15px;
+    height: 50px;
+
+}.menu ul li a:hover{
+    color:aquamarine;
+
+}.menu ul li:hover{
+    border-bottom: 3px solid aquamarine;
+    
+
+}.menu ul li a{
+    color: #838B83;
+    text-decoration: none;
+    font-size: 25px;
+    
+}.menu{
+    width: 70%;
+    float: left;
+
+}.pesquisa{
+    text-align: center;
+    width: 30%;
+    float: left;
+
+}.pesquisa input{
+    background-image: url('../img/lupa.png');
+    background-repeat: no-repeat;
+    background-position: 96%;
+    padding: 15px;
+    width: 180px;
+    margin-top: 15px;
+    height: 30px;
+    border: 1px solid black;
+
+}.colu-100{
+    width: 100%;
+    float: left;
+    position: relative;
+
+}.img-slide{
+    width: 400px;
+    height: 400px;
+
+}.slides{
+    width:400px;
+    height:455px;
+    overflow: hidden;
+    margin-left: 10%;
+
+}.info{
+    width: 30%;
+    float:right;
+    font-size: 26px;
+    display: inline;
+    margin-right: 15%;
+    color: black;
+    
+}.info ul li a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:black;
+    font-size: 22px;
+    margin-top: 0px auto;
+    text-transform: uppercase;
+
+}
+
+
+
