@@ -3,6 +3,6 @@
      $bd_usuario  = 'root';
      $bd_senha    = '';
      $bd_banco    = 'bancoAatstech';  
-     // alteração de conexão
+     
 ?>
 

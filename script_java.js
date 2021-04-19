@@ -24,7 +24,7 @@ function verUsuarios(){
     window.location.assign("verUsuarios.php");
 }
 function excliurUsuario(){
-    window.location.assign("");
+    alert("Desculpa o transtorno, estamos melhorando a sua expêriencia!");
 }
 function vendasEfetudas(){
     alert("Desculpa o transtorno, estamos melhorando a sua expêriencia!");
