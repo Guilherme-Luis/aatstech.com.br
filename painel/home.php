@@ -1,5 +1,6 @@
 <?php
  session_start();
+ $usuario = $_SESSION['usuario'];
  if  ($_SESSION['chave'] != "YCGDHJ"){
   header("Location:login.php?erro=12");
  }
@@ -42,10 +43,25 @@
             <div class="card mb-4 shadow-sm">
             <div class="card-header">
               <h4 class="my-0 fw-normal">
-                   <?php
-                         $usuario = $_SESSION['usuario'];
-                        echo "Bem-Vindo(a), ", $usuario,"!";
-                   ?>
+                <?php
+                 include_once 'bd.php';
+                  // a variavel con sera o nosso o nosso objeto da classe mysqli = classe do mysql para conexão com o banco de dados
+                  $con = new mysqli($bd_servidor, $bd_usuario, $bd_senha, $bd_banco);
+
+                 if( $con->connect_error ){
+                   die("Erro ao conectar com o banco de dados.");
+                 }else{
+                 $sql = "select * from usuarios
+                 where usuario='$usuario'";
+                    $retorno = $con->query($sql);
+                      if( $retorno->num_rows > 0){
+                            if( $registro = $retorno->fetch_assoc() ){
+                             echo "Bem-Vindo(a), " . $registro['nome'] . "!";
+                           } 
+                       }
+                    $con->close();
+                  }
+                ?>
               </h4>
             </div>
             <div class="card-body">
@@ -53,9 +69,24 @@
               <ul class="list-unstyled mt-3 mb-4">
                    <li>
                    <?php
-                         $usuario = $_SESSION['usuario'];
-                        echo $usuario,", há novidades para você!";
-                   ?>
+                 include_once 'bd.php';
+                  // a variavel con sera o nosso o nosso objeto da classe mysqli = classe do mysql para conexão com o banco de dados
+                  $con = new mysqli($bd_servidor, $bd_usuario, $bd_senha, $bd_banco);
+
+                 if( $con->connect_error ){
+                   die("Erro ao conectar com o banco de dados.");
+                 }else{
+                 $sql = "select * from usuarios
+                 where usuario='$usuario'";
+                    $retorno = $con->query($sql);
+                      if( $retorno->num_rows > 0){
+                            if( $registro = $retorno->fetch_assoc() ){
+                              echo $registro['nome']. ", há novidades para você!";
+                           } 
+                       }
+                    $con->close();
+                  }
+                ?>
               </ul>
               </form>
             </div>
