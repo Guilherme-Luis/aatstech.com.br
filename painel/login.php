@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="sortcut icon" href="../images/aatstech.ico"/>
+  <link rel="sortcut icon" href="../images/logo-b.png"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link rel="stylesheet" href="../style.css">
   <script type="text/javascript" src="../script_java.js"></script>
@@ -15,7 +15,7 @@
     font-weight: bold;">
       <a class="py-2 d-none d-md-inline-block" ></a>
       <a class="py-2" aria-label="Product">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Aatstech Corporation</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
+      <img class="bd-placeholder-img" height="24"  src="../images/logo-c.png" alt="">
       </a>
       <a class="py-2 d-none d-md-inline-block" href="../index.php#">Home</a>
       <a class="py-2 d-none d-md-inline-block" href="../index.php#produto">Produto e Soluções</a>
@@ -27,15 +27,9 @@
       <a class="py-2 d-none d-md-inline-block" ></a>
     </nav>
     </header>
-  <main>
+  <main id="corpo">
     <div id="login" class="about-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h2 class="display-4">Aatstech Corporation</h2>
-    
-      <p class="Sobre">
-        <font size = "4" face="Arial">
-        © 2021 <br/> 
-        </font> 
-        </p>
+      <img src="../images/logo-c.png"  alt="Aatstech">
     </div>
     <!--Precos-->
       <div id="autenticao" class="container">
@@ -70,14 +64,16 @@
           </div>
         </div>
       </div>
+      <div id="login" class="about-header px-2 py-2 pt-md-5 pb-md-4 mx-auto text-center">
+    </div>
     <hr />
   </main>
     <!--Final-->
   <footer class="container py-5 margin-top-0 margin-right-auto margin-bottom-0 margin-left-auto">
     <div class="row">
       <div class="col-12 col-md-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Produto</title><circle cx="12" cy="12" r="10"></circle><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"></path></svg>
-        <small class="d-block mb-3 text-muted"><b>Aatstech</br>Corporation</br> © 2021</b></small>
+      <img class="bd-placeholder-img" height="24"  src="../images/logo-c.png" alt="">
+        <small class="d-block mb-3 text-muted"><b>© 2021</b></small>
       </div>
       <div class="col-md-3">
         <h5>Conteúdo</h5>
