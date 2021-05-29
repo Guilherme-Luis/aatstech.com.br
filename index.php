@@ -31,7 +31,7 @@
     <!--Inicio-->
     <div id="home" class="imgBg position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-dark">
       <div class="fonteHome col-md-5 p-lg-5 mx-auto my-5 module-inside">
-        <h2 class="display-4 fw-normal">Water Leak Detector</h2>
+        <h2 class="display-1 fw-normal">Water Leak Detector</h2>
         <p class="lead fw-normal">Vazou chamou Aatstech!</p>
         <!--  Isso era um botão -> <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
       </div>

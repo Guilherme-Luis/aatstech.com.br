@@ -9,10 +9,12 @@
   height:560px;
 }
 .fonteHome{
-  color:White;
+  background-color: rgba(255, 255, 255, 0.301);
+  border-radius: 5px;
+  color:rgba(0, 0, 0);
   filter: none;
   position:relative;
-  float: right;
+  text-align: center;
   font-family: 'Trebuchet MS';
 }
 a{
