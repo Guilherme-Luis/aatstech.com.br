@@ -6,6 +6,7 @@ Projeto criado com a propósito de auxiliar a solução de problema de vazamento
 
 
 •	Integrantes:
+
 Bruno Borges
 
 Guilherme Luís Rodrigues Silva
@@ -13,6 +14,7 @@ Guilherme Luís Rodrigues Silva
 Alisson Junio
 
 Daniel Rosa
+
 
 •	Orientador/Supervisor:
 
